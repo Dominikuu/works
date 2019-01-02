@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html ng-app ="my-app">
+<head>
+    <meta charset="UTF-8">
+    <title>Message Board</title>
+    <style type="text/css">
+    
+    </style>
+     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.min.css">
+
+	<script src="scripts/angular.min.js"></script>
+    <script src="app/app.module.js"></script>
+    <script src="app/controller.js"></script>
+</head>
+<body>
+    <!-- 姓名： <input type="text" ng-model="name"><br> 
+    内容: <textarea ng-model="content"></textarea><br>
+    <button ng-click="sub()">提交</button><br>
+    <h2>显示留言</h2>
+    <ul>
+        <li ng-repeat="item in arr">
+            <p>{{item.name}}</p>
+            <p>{{item.content}}<a href="###" ng-click="del($index)">删除</a></p>
+        </li>
+    </ul> -->
+    <div class="span7" style="margin-top:20px;" ng-controller="controller">
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <td>標題</td>
+                    <td>內容</td>
+                    <td></td>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="message in messagelist">
+                    <td>{{ message.title }}</td>
+                    <td>{{ message.message }}</td>
+                    <td><button class="btn btn-default" ng-click="del($index)">刪除</button></td>
+                    
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <!--訊息輸入-->
+        <div>
+            標題
+            <br>
+            <input type="text" ng-model="title" name="title" placeholder="-標題-" />
+        </div>
+        <br>
+        <div>
+            內容 :
+            <br>
+            <textarea ng-model="message" name="message" placeholder="-內容-"></textarea> 
+        </div>
+        <br>
+        <button class="btn btn-default" type="button" ng-click='addMessage()'>Leave Message</button>
+    </div>
+</body>
+<script type="text/javascript" src="scripts/angular.min.js"></script>
+<!-- <script type="text/javascript">
+var myApp = angular.module("myApp",[])
+
+myApp.controller('myCtrl', ['$scope', function($scope){
+    
+    // 保存每个留言的信息
+    // {name:xx,content:xx}
+    $scope.arr = []
+    // 初始化name和content
+    $scope.name = "" 
+    $scope.content = ""
+
+    $scope.sub = function (){
+
+        // console.log($scope.name,$scope.content)
+        var obj = {
+            name: $scope.name,
+            content: $scope.content
+        }
+
+        // 向arr 里面添加一个对象
+        $scope.arr.push(obj)
+        $scope.name = ""
+        $scope.content = ""
+    }
+    $scope.del = function (index){
+
+        // console.log(index)
+        // 删除下标对应的对象
+        $scope.arr.splice(index,1)
+    }
+}])
+</script> -->
+</html>
