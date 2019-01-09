@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio - Dominique</title>
-    
+    <link rel="icon" type="image/png" href="img/favicon.png" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css">
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="scripts/index.js"></script>
+    
 </head>
+
 <body>
     <header>
         <div class="navbar navbar-dark bg-dark shadow-sm">
@@ -18,6 +24,7 @@
         </div>
     </header>
     <main role ="main">
+      
         <section class="jumbotron text-center">
             <div class="container">
                 <h1 class="jumbotron-heading">Profolio</h1>
@@ -27,12 +34,37 @@
             </div>
             
         </section>
-        <div class="album py-5 bg-light">
+        <div class="album py-5">
             <div class="container">
                 <div class="row">
                   <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
-                      <a href=""><img src="" class="card-img-top" style="height:225px; width: 100%; display: block;" data-holder-rendered="true"></a>
+                      
+                      <div class="span12 carousel-container">
+                          <div id="carousel-2" class="carousel slide carousel-fade">
+
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+                              <div data-slide-no="0" class="item carousel-item active">
+                                <a href="#"><img src="img/registration_1.png" alt=""></a>
+                              </div>
+                              <div data-slide-no="1" class="item carousel-item">
+                                <a href="#"><img src="img/registration_2.png" alt=""></a>
+                              </div>
+                              <div data-slide-no="2" class="item carousel-item">
+                                <a href="#"><img src="img/registration_3.png" alt=""></a>
+                              </div>
+                                
+                            </div>
+                            
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel" data-slide-to="0" class="myCarousel-target active"></li>
+                                <li data-target="#carousel" data-slide-to="1" class="myCarousel-target"></li>
+                                <li data-target="#carousel" data-slide-to="2" class="myCarousel-target"></li>
+                              </ol>
+                          </div>
+
+                      </div>
                       <div class="card-body">
                           <p class="card-text">
                               <strong>會員註冊</strong>
@@ -48,12 +80,47 @@
                   </div>  
                   <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
-                      <a href=""><img src="" class="card-img-top" style="height:225px; width: 100%; display: block;" data-holder-rendered="true"></a>
+                      <div class="span12 carousel-container">
+                          <div id="carousel-2" class="carousel slide carousel-fade">
+
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+                              <div data-slide-no="0" class="item carousel-item active">
+                                <a href="#"><img src="img/order_0.png" alt=""></a>
+                              </div>
+                              <div data-slide-no="1" class="item carousel-item">
+                                <a href="#"><img src="img/order_1.png" alt=""></a>
+                              </div>
+                              <div data-slide-no="2" class="item carousel-item">
+                                <a href="#"><img src="img/order_2.png" alt=""></a>
+                              </div>
+                              <div data-slide-no="3" class="item carousel-item">
+                                <a href="#"><img src="img/order_3.png" alt=""></a>
+                              </div>
+                              <div data-slide-no="4" class="item carousel-item">
+                                <a href="#"><img src="img/order_4.png" alt=""></a>
+                              </div>
+                              <div data-slide-no="5" class="item carousel-item">
+                                <a href="#"><img src="img/order_5.png" alt=""></a>
+                              </div>
+                            </div>
+                            
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel" data-slide-to="0" class="myCarousel-target active"></li>
+                                <li data-target="#carousel" data-slide-to="1" class="myCarousel-target"></li>
+                                <li data-target="#carousel" data-slide-to="2" class="myCarousel-target"></li>
+                                <li data-target="#carousel" data-slide-to="3" class="myCarousel-target"></li>
+                                <li data-target="#carousel" data-slide-to="4" class="myCarousel-target"></li>
+                                <li data-target="#carousel" data-slide-to="5" class="myCarousel-target"></li>
+                              </ol>
+                          </div>
+
+                      </div>
                       <div class="card-body">
                           <p class="card-text">
                               <p class="card-text">
                               <strong>訂單管理系統</strong>
-                              <p>資料視覺化、資料庫CRUD操作、會員註冊登入</p>
+                              <p>資料視覺化、資料庫CRUD操作、會員註冊登入、圖片上傳</p>
                               <ul>
                                 <li>前端 - Bootstrap、Scss、JQuery、AJAX</li>
                                 <li>後端 - MSSQL、ASP.NET/C#</li>
@@ -66,15 +133,39 @@
                   </div>  
                   <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
-                      <a href=""><img src="" class="card-img-top" style="height:225px; width: 100%; display: block;" data-holder-rendered="true"></a>
+                      <div class="span12 carousel-container">
+                          <div id="carousel-2" class="carousel slide carousel-fade">
+
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+                              <div data-slide-no="0" class="item carousel-item active">
+                                <a href="#"><img src="img/registration_1.png" alt=""></a>
+                              </div>
+                              <div data-slide-no="1" class="item carousel-item">
+                                <a href="#"><img src="img/registration_2.png" alt=""></a>
+                              </div>
+                              <div data-slide-no="2" class="item carousel-item">
+                                <a href="#"><img src="img/registration_3.png" alt=""></a>
+                              </div>
+                                
+                            </div>
+                            
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel" data-slide-to="0" class="myCarousel-target active"></li>
+                                <li data-target="#carousel" data-slide-to="1" class="myCarousel-target"></li>
+                                <li data-target="#carousel" data-slide-to="2" class="myCarousel-target"></li>
+                              </ol>
+                          </div>
+
+                      </div>
                       <div class="card-body">
                           <p class="card-text">
                               <p class="card-text">
                                 <p class="card-text">
-                                  <strong>蛋白質電泳影像分析</strong>
+                                  <strong>急診資訊與路線平台</strong>
                                   <p>利用GUI、影像處理，測量蛋白質檢體的分子量</p>
                                   <ul>
-                                    <li>技術: OpenCV、Qt、C++</li>
+                                    <li>前端: JQuery、GoogleMap API、 Bootstrap</li>
                                     
                                   </ul>
                                 </p>
@@ -86,7 +177,35 @@
                   </div>  
                   <div class="col-md-4">
                     <div class="card mb-4 shadow-sm">
-                      <a href=""><img src="" class="card-img-top" style="height:225px; width: 100%; display: block;" data-holder-rendered="true"></a>
+                      <div class="span12 carousel-container">
+                          <div id="carousel-2" class="carousel slide carousel-fade">
+
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+                              <div data-slide-no="0" class="item carousel-item active">
+                                <a href="#"><img src="img/gel_0.png" alt=""></a>
+                              </div>
+                              <div data-slide-no="1" class="item carousel-item">
+                                <a href="#"><img src="img/gel_1.png" alt=""></a>
+                              </div>
+                              <div data-slide-no="2" class="item carousel-item">
+                                <a href="#"><img src="img/gel_2.png" alt=""></a>
+                              </div>
+                              <div data-slide-no="3" class="item carousel-item">
+                                <a href="#"><img src="img/gel_3.png" alt=""></a>
+                              </div>
+                              
+                            </div>
+                            
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel" data-slide-to="0" class="myCarousel-target active"></li>
+                                <li data-target="#carousel" data-slide-to="1" class="myCarousel-target"></li>
+                                <li data-target="#carousel" data-slide-to="2" class="myCarousel-target"></li>
+                                <li data-target="#carousel" data-slide-to="3" class="myCarousel-target"></li>
+                              </ol>
+                          </div>
+
+                      </div>
                       <div class="card-body">
                           <p class="card-text">
                               <p class="card-text">
@@ -102,20 +221,64 @@
                     </div>
                       
                   </div>  
+                  <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                      <div class="span12 carousel-container">
+                          <div id="carousel-2" class="carousel slide carousel-fade">
+
+                            <!-- Carousel items -->
+                            <div class="carousel-inner">
+                              <div data-slide-no="0" class="item carousel-item active">
+                                <a href="#"><img src="img/registration_1.png" alt=""></a>
+                              </div>
+                              <div data-slide-no="1" class="item carousel-item">
+                                <a href="#"><img src="img/registration_2.png" alt=""></a>
+                              </div>
+                              <div data-slide-no="2" class="item carousel-item">
+                                <a href="#"><img src="img/registration_3.png" alt=""></a>
+                              </div>
+                                
+                            </div>
+                            
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel" data-slide-to="0" class="myCarousel-target active"></li>
+                                <li data-target="#carousel" data-slide-to="1" class="myCarousel-target"></li>
+                                <li data-target="#carousel" data-slide-to="2" class="myCarousel-target"></li>
+                              </ol>
+                          </div>
+
+                      </div>
+                      <div class="card-body">
+                          <p class="card-text">
+                              <p class="card-text">
+                                <strong>留言板</strong>
+                                <p>使用MEAN stack，實作RESTful API</p>
+                                <ul>
+                                  <li>前端: Angular、 Boostrap、 JQuery、 HTML/CSS
+                                      後端: NodeJS、ExpressJS、Heroku、MongoDB
+                                  </li>
+                                  
+                                </ul>
+                              </p>
+                          </p>
+                      </div>   
+                    </div>
+                      
+                  </div>  
+
                 </div>
             </div>
         </div>
     </main>
 </body>
 <script type="text/javascript" src="scripts/angular.min.js"></script>
-     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+     
     
 
     <script src="scripts/angular.min.js"></script>
     <script src="app/app.module.js"></script>
     <script src="app/controller.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     
